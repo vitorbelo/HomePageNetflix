@@ -104,13 +104,25 @@ header{
 /* Destaque */
 
 section.destaque{
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 600px;
-    z-index: 1;
+	background-image:url('../images/background.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	z-index: 1;
+
+	overflow-y: hidden;
+	overflow-x: hidden;
+	
+}
+
+#video-destaque{
+    min-width: 100%;
+    min-height: 100%;
     position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .overlay {
@@ -161,5 +173,9 @@ section.destaque{
 	background: white;
 	color: black;
 }
+
+
+
+
 
 
